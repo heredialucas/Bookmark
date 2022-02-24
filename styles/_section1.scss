@@ -1,0 +1,66 @@
+.section1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    .divContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin: 0 70px;
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 18px;
+            color: #9194a1;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+            button{
+                margin-right: 10px;
+                font-weight: 400;
+                width: 150px;
+                color: #252b46;
+                border-radius: 5px;
+                border: none;
+                box-shadow: 0 3px 5px 0px #e2e3e4;
+                padding: 10px;
+                background-color: #f2f2f2;
+            }
+            button:hover{
+                cursor: pointer;
+                width: 150px;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                box-shadow: 0 0 2px 0 #252b46;
+                padding: 10px;
+                background-color: #5368df;
+            }
+        }
+    }
+    .divImage{
+        position: relative;
+        width: 50%;
+        z-index: 10;
+        img{
+            z-index: 10;
+            object-fit: contain;
+        }
+    }
+    .divImage::after{
+        content: '';
+        z-index: -1;
+        width: 70%;
+        height: 370px;
+        background: #5368df;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        border-radius: 0px 0px 0px 200px;
+    }
+}
